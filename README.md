@@ -21,3 +21,6 @@ Welcome to Reds Exploits Corner, a website for unblocked games, apps, and proxy.
 <a href="https://github.com/3kh0/3kh0.github.io">3kh0</a>
 
 <a href="https://github.com/interstellarnetwork/interstellar-v3">Insterstellar</a>
+
+
+Thanks to Rishi for providing some of the domains!
