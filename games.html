@@ -16,11 +16,17 @@
       gtag("config", "G-N0LG27M8L8");
     </script>
     <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="icon" type="image/x-icon" href="/img/canvas.ico" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6700774525685317"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
+  <script src="/js/nav.js"></script>
   <body>
     <nav>
       <h2>Reds Exploit Corner</h2>
@@ -33,6 +39,25 @@
         <li><a href="/pages/chat.html">Chatroom</a></li>
       </ul>
     </nav>
+
+    <script>
+      // Get all the links in the navigation menu
+      var links = document.querySelectorAll("nav a");
+
+      // Loop through the links and add a click event listener
+      links.forEach(function (link) {
+        link.addEventListener("click", function () {
+          // Remove the 'active' class from all the links
+          links.forEach(function (link) {
+            link.classList.remove("active");
+          });
+
+          // Add the 'active' class to the clicked link
+          this.classList.add("active");
+        });
+      });
+    </script>
+
     <br />
     <br />
     <h1 style="text-align: center">Games</h1>
@@ -40,7 +65,7 @@
     <main>
       <link rel="stylesheet" href="/css/games.css" />
       <script src="/js/search.js"></script>
-
+      <script src="/js/nav.js"></script>
       <input
         type="text"
         id="searchbar"
@@ -77,6 +102,16 @@
               <img class="icon" src="/img/games/1v1.jpeg"
             /></a>
             <p4>1v1.lol</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/2048/index.html">
+              <img class="icon" src="/misc/2048/2048.png"
+            /></a>
+            <p4>2048</p4>
           </div>
         </div>
       </div>
@@ -176,7 +211,7 @@
             <a href="/misc/geforce-now/">
               <img class="icon" src="/img/games/cs.png"
             /></a>
-            <p4>Counter Strike - Global Offense</p4>
+            <p4>CS;GO</p4>
           </div>
         </div>
       </div>
@@ -233,10 +268,40 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
-            <a href="/misc/fnaf/">
+            <a href="/misc/fbwg/">
+              <img class="icon" src="/misc/fbwg/logo.jpeg"
+            /></a>
+            <p4>Fire Boy Water Girl</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/emulator/gba/launcher.html#fifa7">
+              <img class="icon" src="/misc/fifa/fifa07.jpeg"
+            /></a>
+            <p4>Fifa 2007</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/fnaf/index.html">
               <img class="icon" src="/misc/fnaf/img.jpeg"
             /></a>
-            <p4>Five Nights At Freddies</p4>
+            <p4>FNAF</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/fnf/index.html">
+              <img class="icon" src="/misc/fnf/fnf.png"
+            /></a>
+            <p4>Friday Night Funkin</p4>
           </div>
         </div>
       </div>
@@ -333,6 +398,16 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/emulator/gba/launcher.html#mortal_kombat">
+              <img class="icon" src="/misc/emulator/ico/mka.jpeg"
+            /></a>
+            <p4>Mortal Kombat Advance</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
             <a href="/misc/emulator/gba/launcher.html#gta">
               <img class="icon" src="/img/games/gtaa.png"
             /></a>
@@ -367,6 +442,18 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a
+              href="https://5gms-rednotsus.koyeb.app/uv/service/hvtrs8%2F-lktvlgancjeoy0.aoo%2F"
+            >
+              <img class="icon" src="/img/games/alchemy.png"
+            /></a>
+            <p4>Little Alchemy 2</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
             <a href="/misc/stunt-cars/">
               <img class="icon" src="/img/games/msc.jpeg"
             /></a>
@@ -380,7 +467,7 @@
             <a href="/misc/n-gon/index.html">
               <img class="icon" src="/misc/n-gon/img.png"
             /></a>
-            <p4>N-Gon</p4>
+            <p4>N Gon</p4>
           </div>
         </div>
       </div>
@@ -457,6 +544,16 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/emulator/gba/launcher.html#pokemonred">
+              <img class="icon" src="/img/games/pred.jpeg"
+            /></a>
+            <p4>Pokemon Fire Red</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
             <a href="/misc/emulator/gba/launcher.html#pokemonsapphire">
               <img class="icon" src="/img/games/psapphire.jpeg"
             /></a>
@@ -471,16 +568,6 @@
               <img class="icon" src="/img/games/rbowl.png"
             /></a>
             <p4>Retro Bowl</p4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span1">
-          <div style="padding-top: 5px" class="card animals" loading="lazy">
-            <a href="https://inc.5gms.tk/service/hvtrs8%2F-kzd%2Cfo%2Fpo%60lmx">
-              <img class="icon" src="/img/games/rbx.jpeg"
-            /></a>
-            <p4>Roblox</p4>
           </div>
         </div>
       </div>
@@ -547,8 +634,18 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/slope-cyber/index.html">
+              <img class="icon" src="/misc/slope-cyber/cyber.png"
+            /></a>
+            <p4>Slope Cyber</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
             <a href="/misc/sm64/index.html">
-              <img class="icon" src="/misc/sm64/logo.png"
+              <img class="icon" src="/misc/sm64/img.png"
             /></a>
             <p4>Super Mario 64</p4>
           </div>
@@ -557,7 +654,7 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
-            <a href="/misc/smashkarts/">
+            <a href="/misc/smashkarts/index.html">
               <img class="icon" src="/img/games/smash.jpeg"
             /></a>
             <p4>Smash Karts</p4>
@@ -567,20 +664,30 @@
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
-            <a href="/misc/soda-shooters/index.html">
-              <img class="icon" src="/misc/soda-shooters/img.png"
+            <a href="/misc/subway-surfers/houston/index.html">
+              <img class="icon" src="/img/games/subway.jpeg"
             /></a>
-            <p4>Soda Shooters</p4>
+            <p4>Subway Surfers</p4>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="span1">
           <div style="padding-top: 5px" class="card animals" loading="lazy">
-            <a href="/misc/subway-surfers/houston/">
-              <img class="icon" src="/img/games/subway.jpeg"
+            <a href="/misc/tetris/index.html">
+              <img class="icon" src="/misc/tetris/flashtetris.png"
             /></a>
-            <p4>Subway Surfers</p4>
+            <p4>Tetris</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/unfair-mario/index.html">
+              <img class="icon" src="/misc/unfair-mario/img.jpeg"
+            /></a>
+            <p4>Unfair Mario</p4>
           </div>
         </div>
       </div>
@@ -631,6 +738,16 @@
               <img class="icon" src="/misc/vex6/assets/icon.jpeg"
             /></a>
             <p4>Vex 6</p4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span1">
+          <div style="padding-top: 5px" class="card animals" loading="lazy">
+            <a href="/misc/vex7/">
+              <img class="icon" src="/misc/vex7/assets/icon.png"
+            /></a>
+            <p4>Vex 7</p4>
           </div>
         </div>
       </div>
