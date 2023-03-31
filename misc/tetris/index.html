@@ -1,25 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flash Tetris</title>
-    <link rel="icon" type="image/x-icon" href="flashtetris.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="flashtetris.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
   </head>
   <body>
-    <script src="/js/main.js"></script>
-    <div id="ruffle" width="100%" height="100%"></div>
-    <script src="/misc/ruffle.js"></script>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
       window.RufflePlayer = window.RufflePlayer || {};
       window.addEventListener("load", (event) => {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
-        const container = document.getElementById("ruffle");
-        player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
+        const container = document.getElementById("container");
         container.appendChild(player);
-        player.load("flashtetris.swf");
+        player.load({
+          url: "flashtetris.swf",
+          backgroundColor: "#000",
+        });
+        player.style.width = window.innerWidth.toString() + "px";
+        player.style.height = window.innerHeight.toString() + "px";
       });
     </script>
   </body>
