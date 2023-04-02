@@ -32,38 +32,5 @@ if (gaenabled == "false") {
       gtag('js', new Date());
       gtag('config', 'G-N0LG27M8L8');`;
   document.head.append(gascript, inlinegascript);
-  script("Injected script 1/2");
-}
-
-const arc = document.createElement("script");
-arc.setAttribute("async", "");
-arc.setAttribute("src", "https://arc.io/widget.min.js#sdad");
-document.head.append(arc);
-script("Injected script 2/2");
-
-function cheatNetwork1() {
-  var win = window.open();
-  var url = "https://cheatnetwork.eu/";
-  var iframe = win.document.createElement("iframe");
-  iframe.style.width = "100%  ";
-  iframe.style.height = "100%";
-  iframe.style.position = "fixed";
-  iframe.style.top = "0";
-  iframe.style.bottom = "0";
-  iframe.style.left = "0";
-  iframe.style.left = "0";
-  iframe.style.border = "none";
-  iframe.style.backgroundcolor = "black";
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-}
-
-async function registerSW() {
-  if ("serviceWorker" in navigator) {
-    try {
-      await navigator.serviceWorker.register("./sw.js");
-    } catch (e) {
-      console.log(`SW registration failed`);
-    }
-  }
+  script("Injected script 1/1");
 }

@@ -18,6 +18,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6700774525685317"
     crossorigin="anonymous"></script>
   <title>Canvas</title>
+  <script src="https://cdn.jsdelivr.net/gh/FogNetwork/ABC/index.js"></script>
 </head>
 <script src="/js/script.js"></script>
 <style>
@@ -53,13 +54,42 @@
   }
 </style>
 <script>
+function cloak() {
+  //Creates new ABC
+  var page = new ABC({
+    type: "blank", //Blank, blob, or overwrite
+    url: "https://55gms.me", //Any url
+  });
+  //Set the type
+  page.setType("blank");
+  //Set the url
+  page.setUrl("https://chatgpt.55gms.me");
+  //Get iframe code
+  console.log(page.getCode());
+  //Open page//Creates new ABC
+  var page = new ABC({
+    type: "blank", //Blank, blob, or overwrite
+    url: "https://55gms.me", //Any url
+  });
+  //Set the type
+  page.setType("blank");
+  //Set the url
+  page.setUrl("https://chatgpt.55gms.me");
+  //Get iframe code
+  console.log(page.getCode());
+  //Open page
+  page.open()
+}
+</script>
+<script>
 function login() {
   const ans = document.getElementById('uranswer').value
   if (ans == '') {
     alert('Enter a password dumbass')
   } else {
-    if (ans == 69420) {
-      window.location.href = '/indexx.html'
+    if (ans == "beta") {
+      cloak()
+      window.location.href = '/index.html'
     } else {
       alert('Incorrect')
       location.reload()
@@ -71,27 +101,13 @@ function login() {
 
 <body>
   <center>
-    <h1>Enter Password</h1>
-    <h3>Roblox fixed!!!!!!!</h3>
+    <h1>ChatGPT [BETA]</h1>
+    <h3>ChatGPT for chromebooks</h3>
     <input type="password" placeholder="Password" id="uranswer">
     <button onclick="login()">Enter</button></button>
   </center>
   <center>
-    <h3>Dont have an account?<br><a href="/signup.html">Sign up</a></h3>
   </center>
-  <br>
-  <center>
-    <h3>Join Our rocket.chat <a href="https://55gms.rocket.chat">here</a></h3>
-  </center>
-  <img src="/img/psw.jpeg" alt="sad" width="300" height="300" class="center">
-  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-      server: '1043318893889982535', // GMS support
-      channel: '1043318895072772139', // #general
-      notifications: true, // Notifications
-      avatar: 'https://55gms.tk/img/pfp.jpg' // Avatar
-    })
-  </script>
 </body>
 
 </html>
