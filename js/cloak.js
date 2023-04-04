@@ -65,3 +65,18 @@ function cloak(link) {
   //Open page
   page.open();
 }
+
+function login() {
+  const ans = document.getElementById("uranswer").value;
+  if (ans == "") {
+    alert("Enter a password dumbass");
+  } else {
+    if (ans == "nico") {
+      cloak("https://chatgpt.55gms.me");
+      window.location.href = "/index.html";
+    } else {
+      alert("Incorrect");
+      location.reload();
+    }
+  }
+}
