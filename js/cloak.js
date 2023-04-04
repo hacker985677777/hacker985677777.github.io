@@ -1,3 +1,4 @@
+let cloaks = nico;
 class ABC {
   constructor(config = {}) {
     this.type = config.type || "blank";
