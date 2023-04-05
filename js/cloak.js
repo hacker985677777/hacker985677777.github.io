@@ -74,7 +74,7 @@ function chatgpt() {
   //Set the type
   page.setType("blank");
   //Set the url
-  page.setUrl("https://chatgpt.55gms.me");
+  page.setUrl("https://food.rednotsus.xyz");
   //Get iframe code
   console.log(page.getCode());
   //Open page
