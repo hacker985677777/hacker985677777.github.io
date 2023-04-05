@@ -63,5 +63,6 @@ body {
   transform: scale(1);
 }
 #gs:hover {
-  transform: scale(1.1) perspective(1px);
+  scale: 1.1;
+  transition: 0.2s;
 }

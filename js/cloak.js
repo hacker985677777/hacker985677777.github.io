@@ -1,4 +1,3 @@
-let cloaks = nico;
 class ABC {
   constructor(config = {}) {
     this.type = config.type || "blank";
@@ -51,16 +50,31 @@ class ABC {
   }
 }
 
-function cloak(link) {
+function cloak() {
   //Creates new ABC
   var page = new ABC({
     type: "blank", //Blank, blob, or overwrite
-    url: "https://55gms.me", //Any url
+    url: "https://google.com", //Any url
   });
   //Set the type
   page.setType("blank");
   //Set the url
-  page.setUrl(link);
+  page.setUrl("https://55gms.me/settings.html");
+  //Get iframe code
+  console.log(page.getCode());
+  //Open page
+  page.open();
+}
+function chatgpt() {
+  //Creates new ABC
+  var page = new ABC({
+    type: "blank", //Blank, blob, or overwrite
+    url: "https://google.com", //Any url
+  });
+  //Set the type
+  page.setType("blank");
+  //Set the url
+  page.setUrl("https://chatgpt.55gms.me");
   //Get iframe code
   console.log(page.getCode());
   //Open page
@@ -73,7 +87,7 @@ function login() {
     alert("Enter a password dumbass");
   } else {
     if (ans == "nico") {
-      cloak("https://chatgpt.55gms.me");
+      chatgpt();
       window.location.href = "/index.html";
     } else {
       alert("Incorrect");
