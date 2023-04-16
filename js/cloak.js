@@ -80,7 +80,7 @@ function chatgpt() {
   //Open page
   page.open();
 }
-function cloak(link) {
+function cloiak(link) {
   //Creates new ABC
   var page = new ABC({
     type: "blank", //Blank, blob, or overwrite
