@@ -3,6 +3,7 @@
 # Reds Exploits Corner
 
 Welcome to Reds Exploits Corner, a website for unblocked games, apps, and proxy. Our goal is to provide a safe and enjoyable experience for users who want to access blocked content.
+Nico was here
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f7eb45c3-8ed9-495c-b3c1-509454478f89/deploy-status)](https://app.netlify.com/sites/superlative-liger-9df658/deploys)
 ![GitHub repo size](https://img.shields.io/github/repo-size/rednotsus/exploits)
